@@ -10,7 +10,7 @@ class CountIncreasingSegments {
         }
 
         // (index, value)
-        yCoordinates.forEachIndexed { index, _ ->
+        for (index in 0 until yCoordinates.size) {
             if (isIncreasingSegmentFromI(yCoordinates, k , index)) {
                 count++
             }
